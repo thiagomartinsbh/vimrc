@@ -3,7 +3,7 @@ Backup for my  vimrc. It is a compilation of useful features I found in various 
 
 Also, some pluggins and configuration files.
 
-## Vim-Pathogem  
+## Vim-Pathogen
 Install vim-pathogen, a tool that makes it easy to install plugins and other runtime files
 
     mkdir -p ~/.vim/autoload ~/.vim/bundle && \
