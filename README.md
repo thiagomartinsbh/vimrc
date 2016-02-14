@@ -11,6 +11,10 @@ Install vim-pathogen, a tool that makes it easy to install plugins and other run
     mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+### Monokai Colorscheme
+
+    curl -LSso ~/.vim/colors/monokai.vim https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
+
 ## Optional
 
 ### Cscope  
