@@ -1,3 +1,6 @@
+" Enable patoghen
+execute pathogen#infect()
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -44,6 +47,7 @@ set showmatch
 " Enable syntax highlighting
 syntax enable
 colorscheme monokai
+
 " Turn backup off, so we dont end with a load of ~ files
 set nobackup
 set nowb
@@ -83,8 +87,5 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-""""""""""""""""""""""""""""""
-" => Status line
-""""""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
