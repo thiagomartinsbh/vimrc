@@ -24,7 +24,7 @@ Install cscope plugins for vim.
 It searches in the current directory and up for a cscope.out file to build a cscope database in whatever directory you open vim from.
 
     mkdir -p ~/.vim/bundle && \
-    curl -LSso ~/.vim/bundle/autoload_cscope.vim http://www.vim.org/scripts/download_script.php?src_id=14884
+    curl -LSso ~/.vim/bundle/autoload_cscope.vim https://raw.githubusercontent.com/thiagomartinsbh/vimrc/master/autoload_cscope.vim
 
 
 ##### Cscope Mappings
