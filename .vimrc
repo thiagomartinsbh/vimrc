@@ -89,3 +89,7 @@ set viminfo^=%
 
 " Always show the status line
 set laststatus=2
+
+" Show tabs differently
+set list
+set listchars=tab:\>\.
