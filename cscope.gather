@@ -1,0 +1,38 @@
+#!/usr/local/bin/bash
+# -*- sh -*-
+
+function findFiles()
+{
+    find $1 -not -type l '(' \
+           -name '*.C' \
+        -o -name '*.c' \
+        -o -name '*.cc' \
+        -o -name '*.cpp' \
+        -o -name '*.cxx' \
+        -o -name '*.def' \
+        -o -name '*.h' \
+        -o -name '*.hh' \
+        -o -name '*.hpp' \
+        -o -name '*.hxx' \
+        -o -name '*.ii' \
+        -o -name '*.inl' \
+        -o -name '*.l' \
+        -o -name '*.lex' \
+        -o -name '*.ll' \
+        -o -name '*.y' \
+        -o -name '*.yac' \
+        -o -name '*.yy' \
+      ')' >> cscope.lst
+}
+
+rm cscope.lst > /dev/null 2>&1
+if [ -z "$1" ]; then
+    findFiles .
+else
+    for p in $*; do
+        findFiles $p
+    done
+    mv -f cscope.lst cscope.tmp
+    sort cscope.tmp | uniq > cscope.lst
+    rm cscope.tmp
+fi
