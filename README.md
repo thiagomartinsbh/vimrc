@@ -20,6 +20,11 @@ Install vim-pathogen, a tool that makes it easy to install plugins and other run
 ### Cscope  
 Install cscope plugins for vim. 
 
+#### Cscope Gather
+Bash script to generate a list of C/C++ files for cscope to index.
+
+    curl -LSso ~/cscope.gather https://raw.githubusercontent.com/thiagomartinsbh/vimrc/master/cscope.gather
+
 ##### Autoload Cscope  
 It searches in the current directory and up for a cscope.out file to build a cscope database in whatever directory you open vim from.
 
