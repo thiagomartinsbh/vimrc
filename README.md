@@ -15,6 +15,10 @@ Install vim-pathogen, a tool that makes it easy to install plugins and other run
 
     curl -LSso ~/.vim/colors/monokai.vim https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
 
+### Get the .vimrc
+    
+    curl -LSso ~/.vimrc https://raw.githubusercontent.com/thiagomartinsbh/vimrc/master/.vimrc
+
 ## Optional
 
 ### Cscope  
