@@ -76,33 +76,8 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Highlight search results
-set hlsearch
-
 " Show matching brackets when text indicator is over them
 set showmatch
-
-" Enable syntax highlighting
-syntax enable
-colorscheme monokai
-" Turn backup off, so we dont end with a load of ~ files
-set nobackup
-set nowb
-set noswapfile
-
-" Use spaces instead of tabs
-set expandtab
-
-" Be smart when using tabs ;)
-set smarttab
-
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
-
-" Linebreak on 200 characters
-set lbr
-set tw=200
 
 set ai "Auto indent
 set si "Smart indent
