@@ -76,20 +76,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Show matching brackets when text indicator is over them
-set showmatch
-
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
-
-" Smart way to move between windows, so you dont need to press ctrl w, just
-" ctrl + command
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
 " return to last edit position when opening files
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
